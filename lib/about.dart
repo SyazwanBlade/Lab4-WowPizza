@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class AboutPage extends StatelessWidget {
@@ -18,10 +17,7 @@ class AboutPage extends StatelessWidget {
         elevation: 0,
         title: const Text(
           'About Us',
-          style: TextStyle(
-            color: darkColor,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(color: darkColor, fontWeight: FontWeight.bold),
         ),
         iconTheme: const IconThemeData(color: darkColor),
       ),
@@ -30,7 +26,6 @@ class AboutPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             // HERO SECTION
             Padding(
               padding: const EdgeInsets.all(20),
@@ -61,10 +56,7 @@ class AboutPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    style: TextStyle(
-                      fontSize: 34,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
                   ),
 
                   const SizedBox(height: 10),
@@ -92,8 +84,11 @@ class AboutPage extends StatelessWidget {
                           height: 210,
                           color: Colors.orange.shade100,
                           child: const Center(
-                            child: Icon(Icons.local_pizza,
-                                size: 70, color: primaryRed),
+                            child: Icon(
+                              Icons.local_pizza,
+                              size: 70,
+                              color: primaryRed,
+                            ),
                           ),
                         );
                       },
@@ -115,10 +110,10 @@ class AboutPage extends StatelessWidget {
 
                   const Text(
                     'WOW Pizza was created with one simple idea: '
-                        'great pizza makes every moment better. '
-                        'We believe that food is more than just a meal. '
-                        'It is a reason to gather, laugh, and create memories '
-                        'with the people who matter most.',
+                    'great pizza makes every moment better. '
+                    'We believe that food is more than just a meal. '
+                    'It is a reason to gather, laugh, and create memories '
+                    'with the people who matter most.',
                     style: TextStyle(
                       fontSize: 14,
                       height: 1.7,
@@ -132,8 +127,7 @@ class AboutPage extends StatelessWidget {
             // OUR PROMISE SECTION
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 16),
-              padding: const EdgeInsets.symmetric(
-                  vertical: 22, horizontal: 12),
+              padding: const EdgeInsets.symmetric(vertical: 22, horizontal: 12),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(15),
@@ -189,8 +183,11 @@ class AboutPage extends StatelessWidget {
                         return Container(
                           height: 170,
                           color: Colors.orange.shade100,
-                          child: const Icon(Icons.local_pizza,
-                              size: 65, color: primaryRed),
+                          child: const Icon(
+                            Icons.local_pizza,
+                            size: 65,
+                            color: primaryRed,
+                          ),
                         );
                       },
                     ),
@@ -211,9 +208,9 @@ class AboutPage extends StatelessWidget {
 
                   const Text(
                     'At WOW Pizza, every pizza tells a story. '
-                        'Whether it is a family dinner, a celebration with '
-                        'friends, or simply treating yourself, we make every '
-                        'occasion more special with delicious pizza.',
+                    'Whether it is a family dinner, a celebration with '
+                    'friends, or simply treating yourself, we make every '
+                    'occasion more special with delicious pizza.',
                     style: TextStyle(
                       fontSize: 14,
                       height: 1.7,
@@ -244,10 +241,7 @@ class AboutPage extends StatelessWidget {
                     child: Text(
                       'Discover what makes every visit to WOW Pizza special.',
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: Colors.black54,
-                      ),
+                      style: TextStyle(fontSize: 13, color: Colors.black54),
                     ),
                   ),
                 ],
@@ -264,7 +258,7 @@ class AboutPage extends StatelessWidget {
                     icon: Icons.restaurant,
                     title: 'Freshly Prepared',
                     description:
-                    'Every pizza is prepared with carefully selected '
+                        'Every pizza is prepared with carefully selected '
                         'ingredients to bring you delicious flavours and '
                         'a satisfying experience.',
                   ),
@@ -275,7 +269,7 @@ class AboutPage extends StatelessWidget {
                     icon: Icons.local_dining,
                     title: 'Something for Everyone',
                     description:
-                    'From classic favourites to exciting new flavours, '
+                        'From classic favourites to exciting new flavours, '
                         'there is always something delicious waiting '
                         'for everyone at WOW Pizza.',
                   ),
@@ -286,7 +280,7 @@ class AboutPage extends StatelessWidget {
                     icon: Icons.delivery_dining,
                     title: 'Made for Every Moment',
                     description:
-                    'Enjoy your favourite pizza during family gatherings, '
+                        'Enjoy your favourite pizza during family gatherings, '
                         'parties, celebrations, or a relaxing day at home.',
                   ),
                 ],
@@ -338,7 +332,7 @@ class AboutPage extends StatelessWidget {
 
                         Text(
                           'Good food. Great moments. '
-                              'Unforgettable pizza.',
+                          'Unforgettable pizza.',
                           style: TextStyle(
                             color: Colors.white70,
                             fontSize: 13,
@@ -371,7 +365,6 @@ class AboutPage extends StatelessWidget {
   }
 }
 
-
 // PROMISE ITEM WIDGET
 class PromiseItem extends StatelessWidget {
   final IconData icon;
@@ -396,10 +389,7 @@ class PromiseItem extends StatelessWidget {
         Text(
           title,
           textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 13,
-          ),
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
         ),
 
         const SizedBox(height: 7),
@@ -420,7 +410,6 @@ class PromiseItem extends StatelessWidget {
     );
   }
 }
-
 
 // EXPERIENCE CARD WIDGET
 class ExperienceCard extends StatelessWidget {
@@ -454,11 +443,7 @@ class ExperienceCard extends StatelessWidget {
               color: const Color(0xFFFFEEEE),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Icon(
-              icon,
-              color: AboutPage.primaryRed,
-              size: 25,
-            ),
+            child: Icon(icon, color: AboutPage.primaryRed, size: 25),
           ),
 
           const SizedBox(width: 15),

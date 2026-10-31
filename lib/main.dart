@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 // Import pages
@@ -26,9 +25,7 @@ class MyApp extends StatelessWidget {
       // Named Routes
       initialRoute: '/about',
 
-      routes: {
-        '/about': (context) => const AboutPage(),
-      },
+      routes: {'/about': (context) => const AboutPage()},
     );
   }
 }
