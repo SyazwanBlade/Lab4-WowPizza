@@ -1,11 +1,11 @@
 {
-    "name": "lab4_ci",
-    "short_name": "lab4_ci",
+    "name": "lab4wowpizza",
+    "short_name": "lab4wowpizza",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Wow Pizza About Page",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

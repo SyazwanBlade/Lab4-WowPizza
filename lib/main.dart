@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 
-import 'menu_card.dart';
+// Import pages
+import 'about.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,27 +14,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Menu',
-      theme: ThemeData(colorSchemeSeed: Colors.deepOrange),
-      home: const MenuPage(),
-    );
-  }
-}
+      debugShowCheckedModeBanner: false,
 
-class MenuPage extends StatelessWidget {
-  const MenuPage({super.key});
+      title: 'WOW Pizza',
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Menu')),
-      body: ListView(
-        children: const [
-          MenuCard(name: 'Nasi Lemak', price: 6.50),
-          MenuCard(name: 'Roti Canai', price: 2.00),
-          MenuCard(name: 'Teh Tarik', price: 3.00),
-        ],
+      theme: ThemeData(
+        primaryColor: Colors.red,
+        scaffoldBackgroundColor: const Color(0xFFF8F8F8),
       ),
+
+      // Named Routes
+      initialRoute: '/about',
+
+      routes: {
+        '/about': (context) => const AboutPage(),
+      },
     );
   }
 }
