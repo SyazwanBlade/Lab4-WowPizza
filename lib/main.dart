@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'menu_card.dart';
+import 'contact_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,9 @@ class MyApp extends StatelessWidget {
       title: 'Menu',
       theme: ThemeData(colorSchemeSeed: Colors.deepOrange),
       home: const MenuPage(),
+      routes: {
+        '/contact': (context) => const ContactPage(),
+      },
     );
   }
 }
