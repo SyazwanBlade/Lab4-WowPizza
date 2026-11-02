@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Menu',
       theme: ThemeData(colorSchemeSeed: Colors.deepOrange),
       home: const MenuPage(),
-      routes: {
-        '/contact': (context) => const ContactPage(),
-      },
+      routes: {'/contact': (context) => const ContactPage()},
     );
   }
 }

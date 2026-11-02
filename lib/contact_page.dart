@@ -2,14 +2,11 @@ import 'package:flutter/material.dart';
 
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Contact Us'),
-        backgroundColor: Colors.red,
-      ),
+      appBar: AppBar(title: Text('Contact Us'), backgroundColor: Colors.red),
       body: Padding(
         padding: EdgeInsets.all(20),
         child: Column(
@@ -28,10 +25,7 @@ class ContactPage extends StatelessWidget {
 
             Text(
               'Address:',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
             Text(
@@ -43,40 +37,25 @@ class ContactPage extends StatelessWidget {
 
             Text(
               'Phone:',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
-            Text(
-              '+60 12-345 6789',
-              style: TextStyle(fontSize: 16),
-            ),
+            Text('+60 12-345 6789', style: TextStyle(fontSize: 16)),
 
             SizedBox(height: 15),
 
             Text(
               'Email:',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
-            Text(
-              'wowpizza@gmail.com',
-              style: TextStyle(fontSize: 16),
-            ),
+            Text('wowpizza@gmail.com', style: TextStyle(fontSize: 16)),
 
             SizedBox(height: 15),
 
             Text(
               'Opening Hours:',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
             Text(
