@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'people.dart';
 
 void main() {
@@ -10,9 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.orange[50],
-      ),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.orange[50]),
       home: People(),
     );
   }

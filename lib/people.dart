@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class People extends StatelessWidget {
   const People({super.key});
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     final team = [
       {
         'name': 'Mario Gotze',
@@ -25,7 +25,7 @@ class People extends StatelessWidget {
         'name': 'Sofia',
         'role': 'Quality Control Manager',
         'image': 'assets/images/people5.jpg',
-      }
+      },
     ];
 
     return Scaffold(
@@ -42,7 +42,9 @@ class People extends StatelessWidget {
             child: ListTile(
               leading: CircleAvatar(
                 radius: 30,
-                backgroundImage: team[index]['image']!.isNotEmpty ? AssetImage(team[index]['image']!):null,
+                backgroundImage: team[index]['image']!.isNotEmpty
+                    ? AssetImage(team[index]['image']!)
+                    : null,
               ),
               title: Text(
                 team[index]['name']!,
@@ -55,17 +57,13 @@ class People extends StatelessWidget {
       ),
 
       bottomNavigationBar: BottomAppBar(
-          child: FilledButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/');
-              },
-              child: Text(
-                  'Back to Home',
-                  style:GoogleFonts.poppins(fontSize: 18)
-              )
-          )
+        child: FilledButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/');
+          },
+          child: Text('Back to Home', style: GoogleFonts.poppins(fontSize: 18)),
+        ),
       ),
-
     );
   }
 }
