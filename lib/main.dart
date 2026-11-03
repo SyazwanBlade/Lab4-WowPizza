@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
 import 'menu_card.dart';
 
 void main() {
@@ -12,9 +13,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Menu',
+      title: 'WOW Pizza',
       theme: ThemeData(colorSchemeSeed: Colors.deepOrange),
-      home: const MenuPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+        '/menu': (context) => const MenuPage(),
+      },
+      // Pages owned by other members are not merged yet.
+      onUnknownRoute: (settings) => MaterialPageRoute(
+        builder: (context) => Scaffold(
+          appBar: AppBar(title: Text(settings.name ?? '')),
+          body: const Center(child: Text('Coming soon')),
+        ),
+      ),
     );
   }
 }
